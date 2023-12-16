@@ -47,6 +47,7 @@ def info(name1 , age1):
 info(name, age)
 '''
 # using the return
+'''
 def cube(num1, num2, num3):
     return float(num1) * float(num2) * float(num3)
 num1 = input("enter a number: ")
@@ -55,4 +56,49 @@ num3 = input("enter a number: ")
 
 value = cube(num1, num2, num3)
 print(str(value))
+'''
+#lets see if statment
+numm_1 = 2
+numm_2 = 5
+if numm_1 > numm_2:
+    print("correct")
+elif numm_2 > numm_1:
+    print("wrong")
+else:
+    print("they are equal!")
+'''
+def calculator(num1, op, num2):
+    if op == "+":
+        print(float(num1) + float(num2))
+    elif op == "-":
+        print(float(num1) - float(num2))
+    elif op == "*":
+        print(float(num1) * float(num2))
+    elif op == "/":
+        print(float(num1) / float(num2))
+    elif op == "%":
+        print(float(num1) % float(num2))
+    else:
+        print("invalid operator!")
+
+print("welcome to the simple calculator!")
+num1 = input("enter first number: ")
+op = input("enter an operator: ")
+num3 = input("enter second number: ")
+
+calculator(num1, op, num3)
+'''
+#decitionaries have like key value pair
+favorites = {
+    1: "january",
+    "birth": "addis ababa",
+    "month": "march",
+    22: "yap not yet",
+}
+print(favorites["month"])
+
+
+
+
+
 
