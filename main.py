@@ -106,7 +106,7 @@ while True:
 anarray = [1, "kevin", "mike", 12]
 for array in anarray:
     print(array)
-'''
+
 #exponent functions
 print(2**5) # this means 2 the power of 5
 
@@ -123,6 +123,36 @@ base = input("enter a base number: ")
 pow = input("enter a power number: ")
 exponent(base, pow)
 print(expow(base, int(pow)))
+
+#array inside an array
+number_grid = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [0]
+]
+print(number_grid[1][0])
+for index in number_grid:
+    for inside in index:
+        print(inside)
+
+# giraffe languge adding g to all the vowels and outputing it
+def translate(phrase):
+    translation = ""
+    for index in phrase:
+        if index in "AEIOUaeiou":
+            if index.isupper() :
+                translation += "G"
+            else:
+                translation += "g"
+        else:
+            translation += index
+    print(translation)
+phrase = input("enter any word: ")
+translate(phrase)
+'''
+
+
 
 
 
