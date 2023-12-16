@@ -88,6 +88,7 @@ num3 = input("enter second number: ")
 
 calculator(num1, op, num3)
 '''
+'''
 #decitionaries have like key value pair
 favorites = {
     1: "january",
@@ -96,6 +97,36 @@ favorites = {
     22: "yap not yet",
 }
 print(favorites["month"])
+while True:
+    print(favorites)
+    break
+'''
+'''
+#for loops
+anarray = [1, "kevin", "mike", 12]
+for array in anarray:
+    print(array)
+'''
+#exponent functions
+print(2**5) # this means 2 the power of 5
+
+def exponent(base_num, pow_num):
+    print(float(base_num)**float(pow_num))
+
+def expow(base, pow):
+    result = 1
+    for index in range(pow):
+        result = float(result) * float(base)
+    return result
+
+base = input("enter a base number: ")
+pow = input("enter a power number: ")
+exponent(base, pow)
+print(expow(base, int(pow)))
+
+
+
+
 
 
 
