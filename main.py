@@ -167,15 +167,12 @@ except ValueError as value:
 # "w" means write the file
 # "a" means append or add information but you cant modify or change the information in the file
 # then we are storing the file in a variable, after opening make sure to close the file.
-employeefile = open("new.txt", "a")
+employeefile = open("index.html", "r")
 
 print(employeefile.readable()) # this will tell us if  the file is readable or not
-# print(employeefile.read()) # this will print out all the information from the file
 
+employeefile.pop(1)
 
-for emplyee in employeefile.readlines():
-    print(emplyee)
-employeefile.write("james")
 employeefile.close()
 
 
