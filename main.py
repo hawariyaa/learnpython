@@ -150,11 +150,33 @@ def translate(phrase):
     print(translation)
 phrase = input("enter any word: ")
 translate(phrase)
+
+
+try:
+    number = int(input("enter a number: "))
+    print(number)
+    value = 10 / 0
+except ZeroDivisionError as error:
+    print(error)
+except ValueError as value:
+    print(str(value) + "try again!")
 '''
+# how to open a file and what mode to use
+# mode of use "r+" means read ane write the file
+# "r" means read file
+# "w" means write the file
+# "a" means append or add information but you cant modify or change the information in the file
+# then we are storing the file in a variable, after opening make sure to close the file.
+employeefile = open("new.txt", "a")
+
+print(employeefile.readable()) # this will tell us if  the file is readable or not
+# print(employeefile.read()) # this will print out all the information from the file
 
 
-
-
+for emplyee in employeefile.readlines():
+    print(emplyee)
+employeefile.write("james")
+employeefile.close()
 
 
 
