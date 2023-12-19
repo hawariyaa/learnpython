@@ -185,11 +185,56 @@ print(nice)
 # with will be very helpful to our project, select the version 3, look for them in different areas
 # because there is someone who already wrote the python code that we are trying to do full or partioal
 # so it can be very helpful
-'''
+
 # class and objects helps us create our own data-type just like int, string
+# to describe this class is the whole thing in this case the student and
+# object is each student with there respective characters specified
+# when we are calling the student and passing it value we are actually calling the init
+# function and the values we passed are going to be stored the respective variables
+# the self.name = name means the value the user passed in is equal to the name variable
+# self is refering to the actual object like student1
+# so what it means is the student object name(student1.name) is equal to the name we passed in
+# in simple terms it means student1.name = mike
+class student:
+    def __init__(self, name, major, gpa, is_on_probation):
+        self.name = name
+        self.major = major
+        self.gpa = gpa
+        self.is_on_probation = is_on_probation
 
+student1 = student("mike", "biology", 3.3, False)
+print(student1.major)
+print(student1.gpa)
 
+'''
+class questions:
+    def __init__(self, prompt, answer):
+        self.prompt = prompt
+        self.answer = answer
 
+questions_prompt = [
+    "what are the color of apples?\n a. Red \n b.purple \n c.orange\n",
+    "what are the color of bnannas?\n a. Red \n b.yellow \n c.orange\n",
+    "what are the color of strawberries?\n a. Red \n b.purple \n c.orange\n",
+]
+
+# common thing is to store objects inside an array
+questions = [
+   questions(questions_prompt[0], "a"),
+   questions(questions_prompt[1], "b"),
+    questions(questions_prompt[2], "a"),
+]
+
+def asking(questions):
+    score = 0
+    for question in questions:
+        answer = input(question.prompt)
+        if answer == question.answer:
+            score += 1
+
+    print("you score is: " + str(score) + "/3")
+
+asking(questions)
 
 
 
