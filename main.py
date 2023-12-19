@@ -160,20 +160,38 @@ except ZeroDivisionError as error:
     print(error)
 except ValueError as value:
     print(str(value) + "try again!")
-'''
+
 # how to open a file and what mode to use
 # mode of use "r+" means read ane write the file
 # "r" means read file
 # "w" means write the file
 # "a" means append or add information but you cant modify or change the information in the file
 # then we are storing the file in a variable, after opening make sure to close the file.
-employeefile = open("index.html", "r")
 
-print(employeefile.readable()) # this will tell us if  the file is readable or not
+employeefile = open("index.py", "w")
 
-employeefile.pop(1)
+
+employeefile.write("nice = 'allofus'")
+
 
 employeefile.close()
+
+import index
+import docx
+
+print(nice)
+#there are two types of modules built-in modules and exteranl modules
+# google list of python modules, there you can see a lot of python modules u can import and work
+# with will be very helpful to our project, select the version 3, look for them in different areas
+# because there is someone who already wrote the python code that we are trying to do full or partioal
+# so it can be very helpful
+'''
+# class and objects helps us create our own data-type just like int, string
+
+
+
+
+
 
 
 
