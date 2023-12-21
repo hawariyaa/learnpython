@@ -206,7 +206,7 @@ student1 = student("mike", "biology", 3.3, False)
 print(student1.major)
 print(student1.gpa)
 
-'''
+
 class questions:
     def __init__(self, prompt, answer):
         self.prompt = prompt
@@ -237,11 +237,43 @@ def asking(questions):
 asking(questions)
 
 
+class student:
+    def __init__(self, name, major, gpa):
+        self.name = name
+        self.major = major
+        self.gpa = gpa
+
+    def ishonor(self):
+        if self.gpa >= 3.5:
+            return True
+        else:
+            return False
 
 
 
+student1 = student("mike", "biology", 3.2)
+print(student1.ishonor())
+'''
+
+class chef:
+    def makes_chicken(self):
+        print("the chef makes a chicken!")
+    def makes_salad(self):
+        print("the chef makes a salad!")
+    def makes_special_dish(self):
+        print("the chef makes a special dish!")
+
+ # the thing about inheritance is, like here the chinses chef can also cook what ever
+ # the normal chef can cook, so here inside of the chinese_chef i want to be able to use
+ # all the functionality(functions) that are contained inside of the chef class
+ # if i have simliar function but different attribute i can override it.
+class chinese_chef(chef):
+    def makes_chicken(self):
+        print("the chef makes orange chinkens!")
+    def nuddles(self):
+        print("the chinese chef can cook nuddles!")
 
 
-
-
+newguy = chinese_chef()
+print(newguy.makes_chicken())
 
