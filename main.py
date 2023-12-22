@@ -254,7 +254,7 @@ class student:
 student1 = student("mike", "biology", 3.2)
 print(student1.ishonor())
 '''
-
+'''
 class chef:
     def makes_chicken(self):
         print("the chef makes a chicken!")
@@ -277,3 +277,30 @@ class chinese_chef(chef):
 newguy = chinese_chef()
 print(newguy.makes_chicken())
 
+
+import pandas as pd
+new_dic = {
+    "employee" : {"dave": {"id": "001", "salary": 2000}, "Ava": {"id": "002", "salary": 1000 }}
+}
+print(new_dic["employee"]["dave"]["id"])
+new_dic["employee"]["dave"]["salary"] = 3000
+print(new_dic.keys())
+print(new_dic.values())
+print(new_dic.get("employee"))
+for x in new_dic["employee"]:
+    print(x)
+
+print(new_dic["employee"])
+
+import pandas as pd
+df = pd.DataFrame.from_dict(new_dic["employee"])
+print(df)
+'''
+
+import pandas as pd
+new_dic = {
+    "employee" : {"dave": {"id": "001", "salary": 2000}, "Ava": {"id": "002", "salary": 1000 }}
+}
+
+df = pd.DataFrame.from_dict(new_dic["employee"], orient='index')
+print(df)
