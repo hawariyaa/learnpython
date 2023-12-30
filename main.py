@@ -295,7 +295,7 @@ print(new_dic["employee"])
 import pandas as pd
 df = pd.DataFrame.from_dict(new_dic["employee"])
 print(df)
-'''
+
 
 import pandas as pd
 new_dic = {
@@ -304,3 +304,23 @@ new_dic = {
 
 df = pd.DataFrame.from_dict(new_dic["employee"], orient='index')
 print(df)
+'''
+myset = set()
+myset.add(4)
+myset.add(5)
+myset.add(7)
+myset.remove(5)
+print(myset)
+myset.clear()
+print(myset)
+
+
+print(id(number))
+string[0] = m
+print(id(number))
+print(number)string = "hey"
+
+a = 5
+b = 5
+print(id(a))
+print(id(b))
